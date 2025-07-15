@@ -135,5 +135,30 @@ bikes_df.isna().any()
 ```
 
 
+```python
+# the number of missing values
+
+total_number_of_missing_values_by_column = bikes_df.isna().sum()
+total_number_of_missing_values_by_column
+```
+
+
+```python
+# visualization of the missing values
+
+import matplotlib.pyplot as plt
+
+total_number_of_missing_values_by_column.plot(kind = "bar")
+plt.show()
+```
+
+**2.Handling Missing values**:
+```python
+# solution 
+
+bikes_df["ProductColor"].mode()
+```
+
+ 
 
 
