@@ -154,11 +154,45 @@ plt.show()
 
 **2.Handling Missing values**:
 ```python
-# solution 
-
-bikes_df["ProductColor"].mode()
+bikes_df = bikes_df.fillna("Black")
+bikes_df
 ```
 
+```python
+# checking for any more missing values
+
+bikes_df.isna().any()
+```
+
+**3. Check for  Duplicates**:
+
+```python
+# solution
+
+# counting the total number of our data point 
+
+len(bikes_df)
+```
+
+```python
+# dropping duplicates in any exists
+
+bikes_df.drop_duplicates(inplace = True)
+```
+
+**4. Handling Duplicates**:
+
+```python
+# solution
+len(bikes_df)
+```
+
+
  
+
+
+
+
+
 
 
